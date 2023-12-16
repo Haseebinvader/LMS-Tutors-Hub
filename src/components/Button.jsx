@@ -3,7 +3,7 @@
 const Button = ({ type, title }) => {
     return (
         <>
-            <button type={type}>{title}</button>
+            <button type={type} style={{ textAlign: 'center' }}>{title}</button>
         </>
     )
 }

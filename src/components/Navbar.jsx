@@ -5,18 +5,18 @@ import Button from './Button'
 
 const Navbar = () => {
   return (
-    <Grid container className=' p-5 flex justify-between'>
+    <Grid container className='flex justify-between max-container padding-container relative z-30 px-24 py-5'>
       <Grid item>
         <Typography className='uppercase hover:text-red-400 hover:font-bold cursor-pointer'>Logo</Typography>
       </Grid>
-      <Grid item className='lg:flex gap-4 uppercase'>
+      <Grid item className='lg:flex gap-4 uppercase hidden'>
         {NavLinks.map((item, index) => (
           <Box key={index}>
             <Link to={item.href} className='hover:text-red-400 hover:font-bold cursor-pointer'>{item.Value}</Link>
           </Box>
         ))}
       </Grid>
-      <Grid item className="border border-blue-500 rounded-full p-2 bg-blue-500 text-white hover:text-black hover:bg-white cursor-pointer">
+      <Grid item className="lg:flex justify-center hidden">
         <Button type='button' title='Authentication' />
       </Grid>
     </Grid>
