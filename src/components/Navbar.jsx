@@ -16,9 +16,10 @@ const Navbar = () => {
           </Box>
         ))}
       </Grid>
-      <Grid item className="lg:flex justify-center hidden">
+      <Grid item className="lg:flex justify-center hidden bg-white p-2 px-4 rounded hover:bg-slate-300 hover:text-white shadow-md">
         <Button type='button' title='Authentication' />
       </Grid>
+
     </Grid>
   )
 }

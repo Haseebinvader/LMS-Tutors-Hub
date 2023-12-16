@@ -9,18 +9,17 @@ const Hero = () => {
             <Grid container className="flex flex-col lg:flex-row px-24 py-5">
                 {/* Content for large screens */}
                 <Grid item className="lg:w-1/2 lg:pt-36">
-                    <Typography variant="h3">{HeroData.Hero_Heading}</Typography>
-                    <Typography>{HeroData.Hero_Desc}</Typography>
+                    <Typography variant="h2">{HeroData.Hero_Heading}</Typography>
+                    <Typography variant="body">{HeroData.Hero_Desc}</Typography>
                     <Box className="flex flex-col lg:flex-row lg:gap-2 pt-4">
-                        <Box className="border border-blue-500 rounded-full p-2 bg-blue-500 text-white hover:text-black hover:bg-white cursor-pointer mb-2 lg:mb-0">
+                        <Box className=" bg-white p-2 px-4 rounded hover:bg-slate-300 hover:text-white shadow-md">
                             <Button type="button" title="Get a Demo" />
                         </Box>
-                        <Box className="border border-blue-500 rounded-full p-2 bg-blue-500 text-white hover:text-black hover:bg-white cursor-pointer">
+                        <Box className=" bg-white p-2 px-4 rounded hover:bg-slate-300 hover:text-white shadow-md">
                             <Button type="button" title="View More" />
                         </Box>
                     </Box>
                 </Grid>
-
                 {/* Image for all screen sizes */}
                 <Grid item className="lg:w-1/2">
                     <img src={Images.herobg} alt="hero-img" className="w-full" />
