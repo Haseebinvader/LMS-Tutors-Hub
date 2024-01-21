@@ -10,7 +10,7 @@ const Hero = () => {
                 {/* Content for large screens */}
                 <Grid item className="lg:w-1/2 lg:pt-36">
                     <Typography variant="h2">{HeroData.Hero_Heading}</Typography>
-                    <Typography variant="body">{HeroData.Hero_Desc}</Typography>
+                    {/* <Typography variant="body">{HeroData.Hero_Desc}</Typography> */}
                     <Box className="flex flex-col lg:flex-row lg:gap-2 pt-4">
                         <Box className=" bg-white p-2 px-4 rounded hover:bg-slate-300 hover:text-white shadow-md">
                             <Button type="button" title="Get a Demo" />

@@ -1,18 +1,22 @@
-import { Button, Grid, Typography } from "@mui/material";
-
+import { Box, Grid, Typography } from "@mui/material";
+import Button from '../../components/Button'
 const AuthRoute = () => {
     return (
         <>
-            <Grid container>
-                <Grid item className="lg:w-1/2 bg-red-500 text-white h-48 ">
-                    <Typography>Become a Tutor</Typography>
-                    <Typography>Join the community of Skillfull Tutors</Typography>
-                    <Button>Join now</Button>
+            <Grid container className="bg-blue-400 flex justify-around items-center h-3/4 py-8">
+                <Grid item className="border border-teal-50 p-28">
+                    <Typography variant="h4" className="text-white" sx={{ fontWeight: 600, fontSize: '30px' }}>Want to Become a Tutor?</Typography>
+                    <Typography variant="h6" className="my-2 text-white">Signup now to become a part of leading tutors community</Typography>
+                    <Box className=' bg-white p-2 px-4 rounded hover:bg-slate-300 hover:text-white shadow-md w-24 text-center my-2 cursor-pointer'>
+                        <Button type='button' title='Join Now' />
+                    </Box>
                 </Grid>
-                <Grid item className="lg:w-1/2 bg-blue-500 text-white ">
-                    <Typography>Become a Student</Typography>
-                    <Typography>Join the community of Students</Typography>
-                    <Button>Join now</Button>
+                <Grid item className="border border-teal-50 p-28">
+                    <Typography variant="h4" className="text-white" sx={{ fontWeight: 600, fontSize: '30px' }}>Want to Become a Student?</Typography>
+                    <Typography variant="h6" className="my-2 text-white">Signup now to become a part of leading community</Typography>
+                    <Box className=' bg-white p-2 px-4 rounded hover:bg-slate-300 hover:text-white shadow-md w-24 text-center my-2 cursor-pointer'>
+                        <Button type='button' title='Join Now' />
+                    </Box>
                 </Grid>
             </Grid>
         </>

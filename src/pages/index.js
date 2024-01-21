@@ -1,5 +1,5 @@
 export { default as Home } from './Home/Home.jsx'
-export { default as About } from './About/About.jsx'
+export { default as Wishlist } from './Wishlist/Wishlist.jsx'
 export { default as Courses } from './Courses/Courses.jsx'
-export { default as Teachers } from './Teachers/Teachers.jsx'
-export { default as Contact } from './Contact/Contact.jsx'
+export { default as Cart } from './Cart/Cart.jsx'
+export { default as ProfilePage } from './Profile/ProfilePage.jsx'

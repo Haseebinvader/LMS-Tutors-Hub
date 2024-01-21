@@ -1,11 +1,11 @@
-import { Home, About, Contact, Courses, Teachers } from "../pages/index"
+import { Home, Wishlist, Cart, Courses, ProfilePage } from "../pages/index"
 
 const PrivateRoutes = [
     { path: '/', component: Home },
-    { path: '/about', component: About },
+    { path: '/wishlist', component: Wishlist },
     { path: '/courses', component: Courses },
-    { path: '/teachers', component: Teachers },
-    { path: '/contact', component: Contact }
+    { path: '/cart', component: Cart },
+    { path: '/profile', component: ProfilePage }
 ]
 
 export { PrivateRoutes }
